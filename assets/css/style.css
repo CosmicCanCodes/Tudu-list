@@ -36,7 +36,7 @@ header, form {
 }
 
 .todo-input, .todo-form {
-    width: 40vh;
+    min-width: 30vh;
     max-width: 70%;
     
 }
@@ -74,13 +74,14 @@ form button:hover{
 }
 
 .todo {
-    margin: 0.5 rem;
+    margin: 0.7rem;
     background: white;
     color: black;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    
 }
 
 .todo li {
@@ -98,4 +99,12 @@ form button:hover{
 
 .complete-btn {
     background: greenyellow;
+}
+
+.todo-item {
+    padding: 0rem 0.7rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
 }
