@@ -1,42 +1,40 @@
-//Selectors
-var todoInput = document.selectElementByClassName("todo-input");
-var todoButton = document.selectElementByClassName("todo-button");
-var todoList = document.selectElementByClassName("todo-list");
+// Selectors
+const todoInput = document.querySelector(".todo-input");
+const todoButton = document.querySelector(".todo-button");
+const todoList = document.querySelector(".todo-list");
 
-//Event Listeners
+// Event Listeners
 
-//Event Listener for Add Todo 
+// Event Listener for Add Todo
 todoButton.addEventListener("click", addTodo);
 
-
-//Functions
-function addTudu(event){
-    //Prevents form subitting
+// Functions
+function addTodo(event) {
+    // Prevents form submitting
     event.preventDefault();
 
-    // creates a to do DIV in the html
-    var tuduDiv = document.createElement("div");
-    tuduDiv.classlist.add("tudu");
+    // Creates a to-do DIV in the HTML
+    const todoDiv = document.createElement("div");
+    todoDiv.classList.add("todo");
 
-    // creates an li element
-    var newTudu = document.createElement("li");
-    newTudu.innertext ="hey";
-    newTudu.classlist.add("tudu-item");
-    tuduDiv.appendChild(newTudu);
+    // Creates an li element
+    const newTodo = document.createElement("li");
+    newTodo.innerText = "hey";
+    newTodo.classList.add("todo-item");
+    todoDiv.appendChild(newTodo);
 
-    //Check Button
-    var completedButton = document.createElement("button");
-    completedButton.innerHTML = "<i class="fas fa-check"> </i>";
+    // Check Button
+    const completedButton = document.createElement("button");
+    completedButton.innerHTML = '<i class="fas fa-check"></i>';
     completedButton.classList.add("complete-btn");
-    tuduDiv.appendChild(completedButton);
+    todoDiv.appendChild(completedButton);
 
-    //Bin Button
-    var binButton = document.createElement("button");
-    bindButton.innerHTML = "<i class="fas fa-trash"> </i>";
-    binButton.classList.add("complete-btn");
-    tuduDiv.appendChild(binButton);
+    // Bin Button
+    const deleteButton = document.createElement("button");
+    deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
+    deleteButton.classList.add("delete-btn");
+    todoDiv.appendChild(deleteButton);
 
-    //Append to List 
-    tuduList.appendChild(tuduDiv);
-
+    // Append to List
+    todoList.appendChild(todoDiv);
 }
