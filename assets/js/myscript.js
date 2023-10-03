@@ -2,6 +2,7 @@
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
+const checkSound = new Audio('../sounds/crumble.mp3');
 
 // Event Listeners
 
@@ -45,12 +46,20 @@ function addTodo(event) {
 
 function deleteCheck(event){
 
-    //Deletes Item
+    //Completes Item 
     const item = event.target;
+    if (item.classList[0] === "complete-btn") {
+        const todo = item.parentElement;
+        todo.classList.toggle("completed");
+        sound.play();
+    }
+    //Deletes Item
     if (item.classList[0] === "delete-btn"){
         const todo = item.parentElement;
-        todo.remove();
+        //Animation
+        todo.classList.add("fall");
+        todo.addEventListener("transitionend", function (){
+            todo.remove();
+        });
     }
-
-
 }
