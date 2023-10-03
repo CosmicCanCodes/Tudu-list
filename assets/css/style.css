@@ -8,15 +8,18 @@
     box-sizing: border-box;
 }
 
+/* Pushes footer down */
 main {
     min-height: 100vh;
 }
-
-.form-container {
-    background-image: linear-gradient(120deg, #9A3B3B, #BCA37F);
-    color: black;
-    font-family: 'Open Sans', sans-serif; 
-    min-height:100vh;        
+   
+/* Header & Form */
+header, form {
+    min-height: 20vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -26,23 +29,22 @@ h1 {
     color: #9A3B3B;
     text-shadow: 2px 2px 0 #BCA37F;
 }
-   
 
-header, form {
-    min-height: 20vh; 
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
+/* List area */
+.form-container {
+    background-image: linear-gradient(120deg, #9A3B3B, #BCA37F);
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
 }
 
 .todo-input, .todo-form {
-    min-width: 30vh;
+    min-width: 25vh;
     max-width: 70%;
-    
 }
 
 form input, form button {
-    padding: 0.5 rem;
+    padding: 0.3rem;
     font-size: 2rem;
     border: none;
     background: #3a3a3a;
@@ -82,7 +84,6 @@ form button:hover{
     justify-content: space-between;
     align-items: center; 
     transition: all 1.4s ease;
-    
 }
 
 .todo li {
@@ -118,4 +119,44 @@ form button:hover{
 .fall {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
+}
+
+/* Drop Down Menu */
+/* This removes the appearence of stylings and allows to create new styling*/
+select {
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none:
+}
+
+/* New Styling for the cursor */
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden; 
+}
+
+select {
+    color: #9A3B3B;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after{
+    /* This is the CSS code for a black cursor, adding it back */
+    content: "\25BC"; 
+    color: white;
+    position: absolute; 
+    background: #9A3B3B;
+    top: 0;
+    right: 0;
+    padding: 1rem; 
+    pointer-events: none;
+
 }
