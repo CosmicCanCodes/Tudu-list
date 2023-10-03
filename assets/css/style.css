@@ -36,7 +36,9 @@ header, form {
 }
 
 .todo-input, .todo-form {
+    width: 40vh;
     max-width: 70%;
+    
 }
 
 form input, form button {
@@ -45,7 +47,6 @@ form input, form button {
     border: none;
     background: #3a3a3a;
     max-width: 70vh;
-
 }
 
 form button {
