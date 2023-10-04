@@ -96,5 +96,5 @@ function filterTodo(event) {
                 } else { todo.style.display = "none"; }
                 break;
     }
-    };
+    }
 }
