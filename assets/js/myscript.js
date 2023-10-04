@@ -18,14 +18,14 @@ function addTodo(event) {
     // Prevents form submitting
     event.preventDefault();
 
-    // Creates a to-do DIV in the HTML
+    // Creates a to-do li in the HTML
     const todoLi = document.createElement("li");
-    todoLi.classList.add("todo-item");
+    todoLi.classList.add("todo");
 
-    // Creates an li element
+    // Creates a span element
     const newTodo = document.createElement("span");
     newTodo.innerText = todoInput.value;
-    newTodo.classList.add("todo");
+    newTodo.classList.add("todo-item");
     todoLi.appendChild(newTodo);
 
     // Check Button
