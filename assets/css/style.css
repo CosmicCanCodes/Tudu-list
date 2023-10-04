@@ -124,7 +124,6 @@ form button:hover{
 /* Drop Down Menu */
 /* This removes the appearence of stylings and allows to create new styling*/
 select {
-    
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
