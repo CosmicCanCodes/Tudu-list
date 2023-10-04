@@ -19,30 +19,30 @@ function addTodo(event) {
     event.preventDefault();
 
     // Creates a to-do DIV in the HTML
-    const todoDiv = document.createElement("div");
-    todoDiv.classList.add("todo");
+    const todoLi = document.createElement("li");
+    todoLi.classList.add("todo-item");
 
     // Creates an li element
-    const newTodo = document.createElement("li");
+    const newTodo = document.createElement("span");
     newTodo.innerText = todoInput.value;
-    newTodo.classList.add("todo-item");
-    todoDiv.appendChild(newTodo);
+    newTodo.classList.add("todo");
+    todoLi.appendChild(newTodo);
 
     // Check Button
     const completedButton = document.createElement("button");
     completedButton.innerHTML = '<i class="fas fa-check"></i>';
     completedButton.classList.add("complete-btn");
-    todoDiv.appendChild(completedButton);
+    todoLi.appendChild(completedButton);
 
 
     // Bin Button
     const deleteButton = document.createElement("button");
     deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
     deleteButton.classList.add("delete-btn");
-    todoDiv.appendChild(deleteButton);
+    todoLi.appendChild(deleteButton);
 
     // Append to List
-    todoList.appendChild(todoDiv);
+    todoList.appendChild(todoLi);
 
     //Clears Todo Input Value
     todoInput.value = "";
