@@ -73,6 +73,7 @@ form button:hover{
     min-width: 30%;
     max-width: 70%;
     list-style: none;
+    padding: 0;
 }
 
 .todo {
