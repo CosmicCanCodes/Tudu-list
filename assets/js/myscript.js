@@ -18,24 +18,29 @@ function addTodo(event) {
     // Prevents form submitting
     event.preventDefault();
 
+    // Check if the input field is empty
+    if (todoInput.value.trim() === "") {
+        return; // Exit the function early if it's empty
+    }
+
     // Creates a to-do li in the HTML
     const todoLi = document.createElement("li");
     todoLi.classList.add("todo");
 
-    // Creates a span element
+    // Creates a span element within the li Element
     const newTodo = document.createElement("span");
     newTodo.innerText = todoInput.value;
     newTodo.classList.add("todo-item");
     todoLi.appendChild(newTodo);
 
-    // Check Button
+    // Check Button for list
     const completedButton = document.createElement("button");
     completedButton.innerHTML = '<i class="fas fa-check"></i>';
     completedButton.classList.add("complete-btn");
     todoLi.appendChild(completedButton);
 
 
-    // Bin Button
+    // Bin Button for list
     const deleteButton = document.createElement("button");
     deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
     deleteButton.classList.add("delete-btn");
@@ -44,7 +49,7 @@ function addTodo(event) {
     // Append to List
     todoList.appendChild(todoLi);
 
-    //Clears Todo Input Value
+    //Clears Todo input value after entering a list item
     todoInput.value = "";
 }
 
