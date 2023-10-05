@@ -57,10 +57,7 @@ function addTodo(event) {
     //Clears Todo input value after entering a list item
     todoInput.value = "";
 
-    /* 
-    * Check the current filter option and adds the todo
-    * item to the appropriate category 
-    */
+    // Check the current filter option and set display style accordingly
     const filterValue = filterOption.value;
     if (filterValue === "completed" && !todoLi.classList.contains("completed")) {
         todoLi.style.display = "none"; // Hide the new task in "completed" filter
