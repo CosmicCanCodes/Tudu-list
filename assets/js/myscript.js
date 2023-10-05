@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // Selectors
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
@@ -9,11 +11,15 @@ const filterOption = document.querySelector(".filter-todo");
 // Event Listener for Add Todo
 todoButton.addEventListener("click", addTodo);
 //Event Listener for Check or Delete
-todoList.addEventListener("click", checkOrDelete); 
+todoList.addEventListener("click", checkOrDelete);
 //Event Listener for the todo List
-filterOption.addEventListener("click", filterTodo);
+filterOption.addEventListener("change", filterTodo);
 
-// Functions
+/**
+ * Adds a new todo item to the todo list.
+ * Prevents adding if the input field is empty.
+ * @param {Event} event - The click event when the "Add Todo" button is clicked.
+ */
 function addTodo(event) {
     // Prevents form submitting
     event.preventDefault();
@@ -39,7 +45,6 @@ function addTodo(event) {
     completedButton.classList.add("complete-btn");
     todoLi.appendChild(completedButton);
 
-
     // Bin Button for list
     const deleteButton = document.createElement("button");
     deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
@@ -51,37 +56,52 @@ function addTodo(event) {
 
     //Clears Todo input value after entering a list item
     todoInput.value = "";
+
+    /* 
+    * Check the current filter option and adds the todo
+    * item to the appropriate category 
+    */
+    const filterValue = filterOption.value;
+    if (filterValue === "completed" && !todoLi.classList.contains("completed")) {
+        todoLi.style.display = "none"; // Hide the new task in "completed" filter
+    } else if (filterValue === "uncompleted" && todoLi.classList.contains("completed")) {
+        todoLi.style.display = "none"; // Hide the new task in "uncompleted" filter
+    }
 }
 
-function checkOrDelete(event){
+/**
+ * Handles checking and deleting todo items in the todo list.
+ * Toggles completed status or deletes the item.
+ * @param {Event} event - The change event when a todo item's checkbox is clicked.
+ */
+function checkOrDelete(event) {
 
-    //Checks Item 
     const item = event.target;
-    console.log(item);
-
+    //Checks Item as "completed"
     if (item.classList[0] === "complete-btn") {
         const todo = item.parentElement;
         todo.classList.toggle("completed");
     }
-    //Deletes Item
-    if (item.classList[0] === "delete-btn"){
+    //Deletes Item from the Todo List
+    if (item.classList[0] === "delete-btn") {
         const todo = item.parentElement;
         //Animation
         todo.classList.add("fall");
-        todo.addEventListener("transitionend", function (){
+        todo.addEventListener("transitionend", function () {
             todo.remove();
         });
     }
 }
 
-/*  This loops through all to do list categories.  
-    The "event.target.value" loops through all cases, namely "all",
-    "completed" and "uncompleted". */
+/**
+ * Filters todo items in the todo list based on the selected option.
+ * Shows or hides items based on "all," "completed," or "uncompleted."
+ * @param {Event} event - The click event when a filter option is selected.
+ */
 function filterTodo(event) {
 
     const todos = todoList.children;
-    
-    for (let todo of todos){
+    for (let todo of todos) {
         switch (event.target.value) {
             case "all":
                 todo.style.display = "flex";
@@ -89,17 +109,21 @@ function filterTodo(event) {
             /*  If the todo List checks "completed", 
                 only show tasks that are done. */
             case "completed":
-                if (todo.classList.contains("completed")){
+                if (todo.classList.contains("completed")) {
                     todo.style.display = "flex";
-                }else {todo.style.display = "none";}  
+                } else {
+                    todo.style.display = "none";
+                }
                 break;
             /*  If the todo List checks "uncompleted",
             only show tasks that are unfinished. */
             case "uncompleted":
-                if (!todo.classList.contains("completed")){
+                if (!todo.classList.contains("completed")) {
                     todo.style.display = "flex";
-                } else { todo.style.display = "none"; }
+                } else {
+                    todo.style.display = "none";
+                }
                 break;
-    }
+        }
     }
 }
