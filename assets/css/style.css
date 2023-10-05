@@ -29,13 +29,31 @@ form {
     flex-wrap: wrap;
 }
 
+.slogan {
+    display: flex;
+    align-items: center;
+}
+
 h1 {
     font-family: 'Playfair Display', sans-serif;
     font: italic 900;
-    font-size: 5rem;
+    font-size: 3rem;
     color: #b00060;
     text-shadow: 2px 2px 0 #febbe0;
+    padding-right: 2rem;
 }
+
+.slogan a {
+    color: #b00060;
+    text-shadow: 2px 2px 0 #febbe0;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.slogan a:hover {
+    color: white;
+}
+
 
 /* List area */
 .form-container {
@@ -188,4 +206,12 @@ select {
     right: 0;
     padding: 1rem;
     pointer-events: none;
+}
+
+/* Screen Sizes 768px and up, for Tablets and really big Phones*/
+@media screen and (min-width: 768px) {
+    h1 {
+    
+    font-size: 5rem;
+   
 }
