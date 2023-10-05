@@ -62,7 +62,7 @@ function addTodo(event) {
     if (filterValue === "completed" && !todoLi.classList.contains("completed")) {
         todoLi.style.display = "none"; // Hide the new task in "completed" filter
     } else if (filterValue === "uncompleted" && todoLi.classList.contains("completed")) {
-        todoLi.style.display = "none"; // Hide the new task in "uncompleted" filter
+        todoLi.style.display = "block"; // Hide the new task in "uncompleted" filter
     }
 }
 

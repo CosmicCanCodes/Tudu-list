@@ -164,6 +164,10 @@ form button:hover {
     opacity: .4;
 }
 
+.uncompleted {
+    opacity: 1;
+}
+
 .fall {
     transform: translateY(0rem) rotateZ(0eg);
     opacity: 0;
