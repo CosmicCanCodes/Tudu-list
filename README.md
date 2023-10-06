@@ -13,20 +13,28 @@ Welcome to the ReadMe file for the Tudu List project! Below, you'll find informa
 - [Tudu List - Project ReadMe](#tudu-list---project-readme)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
-  - [Features](#features)
-  - [Manual](#manual)
+    - [Strategy](#strategy)
+      - [User Stories](#user-stories)
+    - [Scope:](#scope)
+    - [Structure:](#structure)
+    - [Features](#features)
+    - [Manual](#manual)
   - [Design](#design)
+    - [Color Choices:](#color-choices)
+    - [Font:](#font)
+    - [User Interface:](#user-interface)
     - [Languages used](#languages-used)
   - [Validation](#validation)
     - [Css](#css)
     - [Html](#html)
     - [Javascript](#javascript)
     - [Lighthouse](#lighthouse)
-  - [Responsivity](#responsivity)
-  - [Testing](#testing)
-  - [Bugs](#bugs)
-    - [Resolved Issues](#resolved-issues)
-  - [Deployment](#deployment)
+  - [Technicalities](#technicalities)
+    - [Responsivity](#responsivity)
+    - [Testing](#testing)
+    - [Bugs](#bugs)
+      - [Resolved Issues](#resolved-issues)
+    - [Deployment](#deployment)
   - [Credits](#credits)
 
   
@@ -37,7 +45,7 @@ Welcome to the ReadMe file for the Tudu List project! Below, you'll find informa
 Tudu List is a user-friendly online to-do list application that helps streamline your tasks and stay organized. With its minimalist design and efficient task management features, Tudu List is designed to make your daily activities more manageable and stress-free.
 
 ----
-**Strategy**
+### Strategy
 
 By offering this service, users are empowered to:
 - Streamline their daily routines and achieve their goals more efficiently.
@@ -46,7 +54,7 @@ By offering this service, users are empowered to:
 - Promote a sense of accomplishment and motivation as users complete and review their tasks.
 - Save time and mental energy by eliminating the need for complicated, feature-heavy task management tools (looking at you Slack).
 
-***User Stories***
+#### User Stories
 
 1. I want a straightforward online to-do list that is easy to navigate and use, so I can quickly add and manage tasks without a steep learning curve.
 
@@ -54,7 +62,7 @@ By offering this service, users are empowered to:
 
 3. As someone who prefers minimalism, I want the to-do list to have a simple design and only essential features, ensuring I'm not overwhelmed by unnecessary options, additional task managment or clutter.
 ----
-**Scope:**
+### Scope:
 
 
 - Task Management: The primary function of the website is to allow users to add tasks. Users can input task descriptions and optionally set due dates for each task.
@@ -76,7 +84,7 @@ By offering this service, users are empowered to:
 - Mobile Responsiveness: The website should be responsive and work well on both desktop and mobile devices.
 -----
 
-**Structure:**
+### Structure:
 
   
 - A simple one pager
@@ -88,7 +96,7 @@ By offering this service, users are empowered to:
 - A way to view tasks that are completed, unfinished and total tasks
   
 
-## Features
+### Features
 ![Image of landing Page](assets/images/todo-blank.png "Todolist without any tasks")
 ![Image with completed tasks](assets/images/todo-completed.png "Todolist with completed tasks")
 ![Image of all tasks](assets/images/todo-tasks.png "Todolist with all tasks")
@@ -108,7 +116,7 @@ By offering this service, users are empowered to:
 
   
 
-## Manual
+### Manual
 
   
 
@@ -126,7 +134,7 @@ By offering this service, users are empowered to:
 
   
 
-**Color Choices:**
+### Color Choices:
 
   
 
@@ -151,7 +159,7 @@ By offering this service, users are empowered to:
 
   
 
-**Font:**
+### Font:
 
   
 
@@ -167,7 +175,7 @@ By offering this service, users are empowered to:
 
   
 
-**User Interface:**
+### User Interface:
 
   
 
@@ -189,7 +197,7 @@ By offering this service, users are empowered to:
 
 5. **UI Elements:** Buttons, form inputs, and dropdown menus, are styled to be visually appealing and user-friendly. For instance, buttons change color on hover to provide visual feedback to users.
 
-### Languages used
+ ### Languages used
 
 1. **HTML5**
 2. **CSS3**
@@ -199,7 +207,6 @@ By offering this service, users are empowered to:
 ## Validation
 
   
-
 ### Css
 ![CSS Validator](assets/images/css-validation.png "CSS Validation passed")
   
@@ -216,9 +223,9 @@ By offering this service, users are empowered to:
 ![Lighthouse Validator](assets/images/lighthouse-validation.png "Accessibility check validation")
   
 
-  
+## Technicalities  
 
-## Responsivity
+### Responsivity
 
   
 
@@ -226,7 +233,7 @@ The responsive design covers a wide range of devices, from small screens with a 
 
   
 
-## Testing
+### Testing
 
  
 
@@ -243,7 +250,7 @@ The responsive design covers a wide range of devices, from small screens with a 
 
   
 
-## Bugs
+### Bugs
 
   
 
@@ -251,7 +258,7 @@ There is a circumstance when the category is toggled to „uncompleted“ and fi
 
   
 
-### Resolved Issues
+#### Resolved Issues
 
   
 -   In the beginning the addTodo(event) wouldn't function, due to the event.preventDefault(); missing.
@@ -271,7 +278,7 @@ There is a circumstance when the category is toggled to „uncompleted“ and fi
 
   
 
-## Deployment
+### Deployment
 
 -   The Project was deployed to GitHub pages. In order to deploy, follow the steps as follows:
     
