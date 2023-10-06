@@ -1,6 +1,7 @@
 # Tudu List - Project ReadMe
 
 Welcome to the ReadMe file for the Tudu List project! Below, you'll find information about the project, its features, and how to get started.
+A live link of the deployed website can be found [here!](https://cosmiccancodes.github.io/Tudu-list/)
 ## Table of Contents
 - [Tudu List - Project ReadMe](#tudu-list---project-readme)
   - [Table of Contents](#table-of-contents)
@@ -214,20 +215,11 @@ By offering this service, users are empowered to:
 ### Lighthouse
 ![Lighthouse Validator](assets/images/lighthouse-validation.png "Accessibility check validation")
   
-
 ## Technicalities  
-
 ### Responsivity
-
-  
-
 The responsive design covers a wide range of devices, from small screens with a width of 325px to large screens with up to 5k resolution.
 
-  
-
 ### Testing
-
- 
 
 -   I tested the Todo List in different browsers: Chrome, Firefox, Safari, Edge
     
@@ -243,16 +235,10 @@ The responsive design covers a wide range of devices, from small screens with a 
   
 
 ### Bugs
-
-  
-
 There is a circumstance when the category is toggled to „uncompleted“ and files are being checked as „completed“, they still remain in the same category. I couldn't fix the issue on time.
-
-  
 
 #### Resolved Issues
 
-  
 -   In the beginning the addTodo(event) wouldn't function, due to the event.preventDefault(); missing.
     
 -   The bin Button wouldnt function to the the Class-list being false
@@ -262,13 +248,6 @@ There is a circumstance when the category is toggled to „uncompleted“ and fi
 -   The event listener for the filterOption.addEventListener("change", filterTodo); had to be changed from „click“ to „change“
     
 -   Throughout the JS file, appropriate Docstrings where updated to fit common JS conventions
-    
-
-  
-
-  
-
-  
 
 ### Deployment
 
@@ -287,11 +266,6 @@ There is a circumstance when the category is toggled to „uncompleted“ and fi
 
 ## Credits
 
-  
-
 Javascript: The overall understanding comes from the course material, the rest however came from watching over [BroCode](https://youtu.be/8dWL3wF_OMw?si=sTkXU2zOXUli1pjV) YouTube codealongs, as well as more material from his YouTube channel.
-
-
-  
 
 Of course the guidance of my Mentor Brian Macharia was very helpful with cleaning up the code and completing the project. Thank you!
