@@ -3,9 +3,9 @@
 Welcome to the ReadMe file for the Tudu List project! Below, you'll find information about the project, its features, and how to get started.
 A live link of the deployed website can be found [here!](https://cosmiccancodes.github.io/Tudu-list/)
 ## Table of Contents
+
 - [Tudu List - Project ReadMe](#tudu-list---project-readme)
   - [Table of Contents](#table-of-contents)
-  - [Tudu List is a user-friendly online to-do list application that helps streamline your tasks and stay organized. With its minimalist design and efficient task management features, Tudu List is designed to make your daily activities more manageable and stress-free.](#tudu-list-is-a-user-friendly-online-to-do-list-application-that-helps-streamline-your-tasks-and-stay-organized-with-its-minimalist-design-and-efficient-task-management-features-tudu-list-is-designed-to-make-your-daily-activities-more-manageable-and-stress-free)
     - [Strategy](#strategy)
       - [User Stories](#user-stories)
     - [Scope:](#scope)
@@ -31,9 +31,13 @@ A live link of the deployed website can be found [here!](https://cosmiccancodes.
   - [Credits](#credits)
 
  Introduction
+ 
 ![A Mockup of the Website on several devices](assets/images/mockup.png "A Mockup of the Website on several devices")
-Tudu List is a user-friendly online to-do list application that helps streamline your tasks and stay organized. With its minimalist design and efficient task management features, Tudu List is designed to make your daily activities more manageable and stress-free.
+
 ----
+
+Tudu List is a user-friendly online to-do list application that helps streamline your tasks and stay organized. With its minimalist design and efficient task management features, Tudu List is designed to make your daily activities more manageable and stress-free.
+
 ### Strategy 
 By offering this service, users are empowered to:
 - Streamline their daily routines and achieve their goals more efficiently.
