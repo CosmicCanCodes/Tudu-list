@@ -79,13 +79,13 @@ By offering this service, users are empowered to:
 ### Structure:
 
   
-- A simple one pager
+- A simple One Pager.
 
 - A field for text input
 
-- A feature to remove and add tasks through buttons
+- A feature to remove and add tasks with buttons.
 
-- A way to view tasks that are completed, unfinished and total tasks
+- A way to view tasks that are completed, unfinished and total tasks.
   
 
 ### Features
