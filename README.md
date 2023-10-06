@@ -1,15 +1,7 @@
 # Tudu List - Project ReadMe
 
-  
-
 Welcome to the ReadMe file for the Tudu List project! Below, you'll find information about the project, its features, and how to get started.
-
-  
-
 ## Table of Contents
-
-  
-
 - [Tudu List - Project ReadMe](#tudu-list---project-readme)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
@@ -71,7 +63,7 @@ By offering this service, users are empowered to:
 
 - View Finished Tasks: Users can view a list of tasks that have been marked as completed.
 
-- Filtering: Users can switch between different views **(There might be additional featers added in the future)**
+- Filtering: Users can switch between different views **(There might be additional feats added in the future)**
 
 - All Tasks: Display a list of all taks, including completed and pending ones.
 
