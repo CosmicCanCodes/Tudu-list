@@ -64,9 +64,7 @@ function addTodo(event) {
     } else if (filterValue === "uncompleted" && todoLi.classList.contains("completed")) {
         todoLi.style.display = "block"; // Hide the new task in "uncompleted" filter
     }
-
 }
-
 
 /**
  * Handles checking and deleting todo items in the todo list.
@@ -100,19 +98,25 @@ function checkOrDelete(event) {
 function filterTodo(event) {
 
     const todos = todoList.children;
+
     for (let todo of todos) {
         switch (event.target.value) {
             case "all":
                 todo.style.display = "flex";
                 break;
-            /*  If the todo List checks "completed", 
+            /*  If the todo List checks "completed", 
                 only show tasks that are done. */
             case "completed":
                 if (todo.classList.contains("completed")) {
                     todo.style.display = "flex";
-                } else {
-                    todo.style.display = "none";
-                }
+                } else { todo.style.display = "none"; }
+                break;
+            /*  If the todo List checks "uncompleted",
+            only show tasks that are unfinished. */
+            case "uncompleted":
+                if (!todo.classList.contains("completed")) {
+                    todo.style.display = "flex";
+                } else { todo.style.display = "none"; }
                 break;
         }
     }
