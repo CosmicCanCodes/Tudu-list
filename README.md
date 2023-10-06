@@ -294,4 +294,4 @@ Javascript: The overall understanding comes from the course material, the rest h
 
   
 
-Of course my Mentor Brian was very helpful with cleaning up the code and completing the project.
+Of course the guidance of my Mentor Brian Macharia was very helpful with cleaning up the code and completing the project. Thank you!
