@@ -64,7 +64,9 @@ function addTodo(event) {
     } else if (filterValue === "uncompleted" && todoLi.classList.contains("completed")) {
         todoLi.style.display = "block"; // Hide the new task in "uncompleted" filter
     }
+
 }
+
 
 /**
  * Handles checking and deleting todo items in the todo list.
