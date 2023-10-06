@@ -112,15 +112,6 @@ function filterTodo(event) {
                     todo.style.display = "none";
                 }
                 break;
-            /*  If the todo List checks "uncompleted",
-            only show tasks that are unfinished. */
-            case "uncompleted":
-                if (!todo.classList.contains("completed")) {
-                    todo.style.display = "flex";
-                } else {
-                    todo.style.display = "none";
-                }
-                break;
         }
     }
 }
